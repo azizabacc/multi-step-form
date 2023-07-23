@@ -25,8 +25,8 @@ desktopDesign.addEventListener('change', mediaDisplayUpdate);
 
 ```
 
-### What I learned
+### Project not finished :
 
-Project not finished : 
+- 2 pages are not finished (resume pages)
 - add database to save informations, espacially to make the two last pages to resume the filled form monthly and yearly
 
