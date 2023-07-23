@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+<link rel="stylesheet" href="style.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar start -->
+<div id="sliderBar">
+  <div class="step" id="step1">
+    <p class="stepLogo currentStep">1</p>
+    <div class="stepNav">
+      <p class="stepNb"> Step 1</p>
+      <p class="stepNavTitle"> YOUR INFO</p>
+    </div>
+  </div>
+
+  <div class="step" id="step2">
+    <p class="stepLogo">2</p>
+    <div class="stepNav">
+      <p class="stepNb">  Step 2</p>
+      <p class="stepNavTitle"> SELECT PLAN</p>
+    </div>
+  </div>
+
+  <div class="step" id="step3">
+    <p class="stepLogo">3</p>
+    <div class="stepNav">
+      <p class="stepNb">  Step 3</p>
+      <p class="stepNavTitle">  ADD-ONS</p>
+    </div>
+  </div>
+
+  <div class="step" id="step4">
+    <p class="stepLogo">4</p>
+    <div class="stepNav">
+      <p class="stepNb">  Step 4</p>
+      <p class="stepNavTitle">  SUMMARY</p>
+    </div>
+  </div>
+</div>
+
+ 
+ 
+
+  <!-- Sidebar end -->
+  <!-- Step 1 start -->
+  <main>
+<div class="stepContainer">
+  <div class="formContainer currentForm">
+    <h1 class="stepTitle" >Personal info</h1>
+    <p class="stepDesc" >  Please provide your name, email address, and phone number.</p>
+    <div class="stepForm" >
+      <label for="nameInput">Name</label>
+      <input  class="textInput" type="text" id="nameInput" placeholder="  e.g. Stephen King">
+      <label for="emailInput" > Email Address</label>
+      <input  class="textInput" type="email" id="emailInput" placeholder="  e.g. stephenking@lorem.com">
+      <label   for="phoneInput" >  Phone Number  </label>
+      <input  class="textInput" type="number" id="phoneInput" placeholder="  e.g. +1 234 567 890">
+    </div>
+  </div>
+
+  <div class="formContainer">
+    <h1 class="stepTitle">Select your plan</h1>
+    <p class="stepDesc"> You have the option of monthly or yearly billing.</p>
+    <div class="stepForm" id="stepForm2" >
+     <div class="optionPlanContainer">
+        <div class="optionPlanDiv">
+          <img src="assets/images/icon-arcade.svg" alt="">
+          <div class="optionText">
+            <p class='optionPlan'>Arcade</p>
+            <p class='optionPrice'>  $9/mo</p>
+          </div>
+        </div>
+        <div class="optionPlanDiv">
+          <img src="assets/images/icon-advanced.svg" alt="">
+          <div class="optionText">
+            <p class='optionPlan'>Advanced</p>
+            <p class='optionPrice'> $12/mo</p> 
+          </div>
+        </div>
+
+        <div class="optionPlanDiv">
+          <img src="assets/images/icon-pro.svg" alt="">
+          <div class="optionText">
+            <p class='optionPlan'>   Pro</p>
+            <p class='optionPrice'>  $15/mo</p>
+          </div>
+        </div>
+     </div>
+     <div class="checkboxContainer">
+      <p>Monthly</p>
+      <input type="checkbox"  id="checkbox">
+      <label id='checkboxLabel' for="checkbox">     <div id="ball"></div></label>
+ 
+      <p>Yearly</p>
+      
+      </div>
+    </div>
+  </div>
+
+  <div class="formContainer">
+    <h1 class="stepTitle">Pick add-ons</h1>
+    <p class="stepDesc">Add-ons help enhance your gaming experience.</p>
+    <div class="stepForm" >
+      <div class="onsDiv">
+        <input type="checkbox" class="checkboxOns" disabled >
+        <div class="ons">
+          <p class="onsTitle">
+            Online service
+          </p>
+          <p class="onsDesc">
+            Access to multiplayer games
+          </p>
+        </div>
+        <p class="onsPrice">+$1/mo</p>
+     </div>
+
+     <div class="onsDiv">
+        <input type="checkbox" class="checkboxOns">
+        <div class="ons">
+          <p class="onsTitle">
+            Larger storage
+          </p>
+          <p class="onsDesc">
+            Extra 1TB of cloud save
+          </p>
+        </div>
+        <p class="onsPrice">+$2/mo</p>
+     </div>
+
+     <div class="onsDiv">
+        <input type="checkbox" class="checkboxOns">
+        <div class="ons">
+
+          <p class="onsTitle">
+            Customizable Profile
+          </p>
+          <p class="onsDesc">
+            Custom theme on your profile
+          </p>
+        </div>
+        <p class="onsPrice">+$2/mo</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="formContainer">
+    <h1 class="stepTitle">Finishing up</h1>
+    <p class="stepDesc"> Double-check everything looks OK before confirming.</p>
+    <div class="stepForm">
+      <div id="resume">
+        <div class="planResume">
+          <div id="planResumeLeft">
+            <p id="optionResume">t</p>
+            <a href="">Change</a>
+          </div>
+          <p id="planResumeRight">$</p>
+        </div>
+        <div class="oddsResume"></div>
+        <div id="total">
+          <p id="totalTitle">Total(per month)</p>
+          <p id="totalPrice">$$$$$$$$</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+</div>
+
+<div id="navBtns">
+  <button id="previousBtn"  class="hidden">Go back</button>
+  <button id="nextBtn">Next Step</button>
+</div>
+</main>
+
+  
+
+  
+<!--   <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">azizabacc</a>.
+  </div> -->
+  <script src="script.js" defer></script>
+</body>
+</html>
