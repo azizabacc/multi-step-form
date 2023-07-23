@@ -4,9 +4,6 @@
 
 
 
-```html
-
-```
 ```css
 @media only screen and (max-width: 560px) {
  .stepContainer{
